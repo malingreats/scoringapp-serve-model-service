@@ -16,7 +16,7 @@ import numpy as np
 from flask import Flask, jsonify, make_response, request, Response
 from joblib import load
 from sklearn.base import BaseEstimator
-from . application_score import compute_prediction
+from .application_score import compute_prediction
 
 MODEL_PATH = 'XGBoost.sav'
 
