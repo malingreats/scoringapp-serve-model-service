@@ -1,6 +1,6 @@
 version: "1.0"
 project:
-  name: bodywork-serve-model-project
+  name: serve-model
   docker_image: bodyworkml/bodywork-core:latest
   DAG: scoring_service
 stages:
@@ -11,6 +11,8 @@ stages:
       - joblib==0.17.0
       - numpy==1.19.4
       - scikit-learn==0.23.2
+      - pandas
+      - pickle
     cpu_request: 0.5
     memory_request_mb: 100
     service:
