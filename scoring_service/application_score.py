@@ -11,7 +11,7 @@ import os
 import json
 
 MODEL_PATH = 'XGBoost.sav'
-model = load(MODEL_PATH)
+
 def compute_prediction(request_json):
     try:
         pre_request = preprocessing(request_json)
